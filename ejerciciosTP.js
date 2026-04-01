@@ -48,3 +48,22 @@ console.log(todosMayoresA1000);
 // 10. Verificar existencia con .includes()
 const incluyeCampera = nombres.includes("Campera");
 console.log(incluyeCampera);
+
+// 11. Ordenar con .sort()
+const productosOrdenados = [...productos].sort((a, b) => a.precio - b.precio);
+console.log(productosOrdenados);
+
+// 12. Generar mensajes personalizados con .map()
+const mensajes = productos.map((producto) =>
+  `El producto ${producto.nombre} cuesta $${producto.precio} y pertenece a la categoría ${producto.categoria}.`
+);
+console.log(mensajes);
+
+// 13. Agregar productos con spread
+const nuevosProductos = [
+  { id: 6, nombre: "Bufanda", precio: 2000, categoria: "Accesorios" },
+  { id: 7, nombre: "Botas", precio: 7000, categoria: "Calzado" }
+];
+
+const todosLosProductos = [...productos, ...nuevosProductos];
+console.log(todosLosProductos);
