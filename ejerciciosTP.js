@@ -36,3 +36,15 @@ console.log(productosMayoresA3000);
 // 7. Buscar un producto específico con .find()
 const productoGorra = productos.find((producto) => producto.nombre === "Gorra");
 console.log(productoGorra);
+
+// 8. Verificar con .some()
+const existeMayorA10000 = productos.some((producto) => producto.precio > 10000);
+console.log(existeMayorA10000);
+
+// 9. Verificar con .every()
+const todosMayoresA1000 = productos.every((producto) => producto.precio > 1000);
+console.log(todosMayoresA1000);
+
+// 10. Verificar existencia con .includes()
+const incluyeCampera = nombres.includes("Campera");
+console.log(incluyeCampera);
